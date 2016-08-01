@@ -13,6 +13,11 @@
 		B5DC48B71D4E9C6B007E99D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DC48B61D4E9C6B007E99D0 /* Assets.xcassets */; };
 		B5DC48BA1D4E9C6B007E99D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DC48B81D4E9C6B007E99D0 /* LaunchScreen.storyboard */; };
 		B5DC48C21D4EA37D007E99D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5DC48C11D4EA37D007E99D0 /* GoogleService-Info.plist */; };
+		B5DC48C71D4EC757007E99D0 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC48C61D4EC757007E99D0 /* FancyView.swift */; };
+		B5DC48CA1D4EC7A1007E99D0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC48C91D4EC7A1007E99D0 /* Constants.swift */; };
+		B5DC48CC1D4ECE28007E99D0 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC48CB1D4ECE28007E99D0 /* RoundBtn.swift */; };
+		B5DC48CE1D4ED0BD007E99D0 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC48CD1D4ED0BD007E99D0 /* FancyField.swift */; };
+		B5DC48D01D4ED5E6007E99D0 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC48CF1D4ED5E6007E99D0 /* FancyBtn.swift */; };
 		E701CFCBC8ECFF54E854CB3B /* Pods_SocialFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BF860EDD67576F1FE5D2E4 /* Pods_SocialFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +33,11 @@
 		B5DC48B91D4E9C6B007E99D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5DC48BB1D4E9C6B007E99D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5DC48C11D4EA37D007E99D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B5DC48C61D4EC757007E99D0 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		B5DC48C91D4EC7A1007E99D0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B5DC48CB1D4ECE28007E99D0 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		B5DC48CD1D4ED0BD007E99D0 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		B5DC48CF1D4ED5E6007E99D0 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,7 @@
 		B5DC48AE1D4E9C6B007E99D0 /* SocialFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				B5DC48C81D4EC791007E99D0 /* Utils */,
 				B5DC48C31D4EA8AC007E99D0 /* Model */,
 				B5DC48C41D4EA8B4007E99D0 /* Controller */,
 				B5DC48C51D4EA8BA007E99D0 /* View */,
@@ -111,8 +122,20 @@
 		B5DC48C51D4EA8BA007E99D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B5DC48C61D4EC757007E99D0 /* FancyView.swift */,
+				B5DC48CB1D4ECE28007E99D0 /* RoundBtn.swift */,
+				B5DC48CD1D4ED0BD007E99D0 /* FancyField.swift */,
+				B5DC48CF1D4ED5E6007E99D0 /* FancyBtn.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		B5DC48C81D4EC791007E99D0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B5DC48C91D4EC7A1007E99D0 /* Constants.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,8 +261,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DC48CE1D4ED0BD007E99D0 /* FancyField.swift in Sources */,
 				B5DC48B21D4E9C6B007E99D0 /* SignInVC.swift in Sources */,
+				B5DC48CC1D4ECE28007E99D0 /* RoundBtn.swift in Sources */,
 				B5DC48B01D4E9C6B007E99D0 /* AppDelegate.swift in Sources */,
+				B5DC48C71D4EC757007E99D0 /* FancyView.swift in Sources */,
+				B5DC48CA1D4EC7A1007E99D0 /* Constants.swift in Sources */,
+				B5DC48D01D4ED5E6007E99D0 /* FancyBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
