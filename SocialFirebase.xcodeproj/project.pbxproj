@@ -18,6 +18,8 @@
 		B5DC48CC1D4ECE28007E99D0 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC48CB1D4ECE28007E99D0 /* RoundBtn.swift */; };
 		B5DC48CE1D4ED0BD007E99D0 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC48CD1D4ED0BD007E99D0 /* FancyField.swift */; };
 		B5DC48D01D4ED5E6007E99D0 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC48CF1D4ED5E6007E99D0 /* FancyBtn.swift */; };
+		B5DC48D21D4EFBA4007E99D0 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC48D11D4EFBA4007E99D0 /* FeedVC.swift */; };
+		B5DC48D41D4F2569007E99D0 /* FancyCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC48D31D4F2569007E99D0 /* FancyCircleView.swift */; };
 		E701CFCBC8ECFF54E854CB3B /* Pods_SocialFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BF860EDD67576F1FE5D2E4 /* Pods_SocialFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		B5DC48CB1D4ECE28007E99D0 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		B5DC48CD1D4ED0BD007E99D0 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		B5DC48CF1D4ED5E6007E99D0 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		B5DC48D11D4EFBA4007E99D0 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		B5DC48D31D4F2569007E99D0 /* FancyCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				B5DC48B11D4E9C6B007E99D0 /* SignInVC.swift */,
+				B5DC48D11D4EFBA4007E99D0 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 				B5DC48CB1D4ECE28007E99D0 /* RoundBtn.swift */,
 				B5DC48CD1D4ED0BD007E99D0 /* FancyField.swift */,
 				B5DC48CF1D4ED5E6007E99D0 /* FancyBtn.swift */,
+				B5DC48D31D4F2569007E99D0 /* FancyCircleView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -265,6 +271,8 @@
 				B5DC48B21D4E9C6B007E99D0 /* SignInVC.swift in Sources */,
 				B5DC48CC1D4ECE28007E99D0 /* RoundBtn.swift in Sources */,
 				B5DC48B01D4E9C6B007E99D0 /* AppDelegate.swift in Sources */,
+				B5DC48D41D4F2569007E99D0 /* FancyCircleView.swift in Sources */,
+				B5DC48D21D4EFBA4007E99D0 /* FeedVC.swift in Sources */,
 				B5DC48C71D4EC757007E99D0 /* FancyView.swift in Sources */,
 				B5DC48CA1D4EC7A1007E99D0 /* Constants.swift in Sources */,
 				B5DC48D01D4ED5E6007E99D0 /* FancyBtn.swift in Sources */,
