@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
+import Firebase
 
 class SignInVC: UIViewController {
 
@@ -21,5 +24,31 @@ class SignInVC: UIViewController {
     }
 
 
+    @IBAction func facebookBtnTapped(sender: AnyObject) {
+        
+        let facebookLogin = FBSDKLoginManager()
+        
+        facebookLogin.logInWithReadPermissions(["email"], fromViewController: self, handler: { (result, error) in
+            if error != nil {
+                print("BRIAN: Could not authenticate with facebook")
+            } else if result?.isCancelled == true {
+                print("BRIAN: User cancelled facebook authentication")
+            } else {
+                print("BRIAN: Successfully authenticated with facebook")
+                let credential = FIRFacebookAuthProvider.credentialWithAccessToken(FBSDKAccessToken.currentAccessToken().tokenString)
+                self.firebaseAuth(credential)
+            }
+        })
+    }
+    
+    func firebaseAuth(credential: FIRAuthCredential) {
+        FIRAuth.auth()?.signInWithCredential(credential, completion: { (user, error) in
+            if error != nil {
+                print("BRIAN: Unable to authenticate with Firebase - \(error)")
+            } else {
+                print("BRIAN: Successfully authenticated with Firebase")
+            }
+        })
+    }
 }
 
