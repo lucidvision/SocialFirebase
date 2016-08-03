@@ -22,6 +22,7 @@
 		B5DC48D41D4F2569007E99D0 /* FancyCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC48D31D4F2569007E99D0 /* FancyCircleView.swift */; };
 		B5DC48D61D4FB797007E99D0 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC48D51D4FB797007E99D0 /* PostCell.swift */; };
 		B5DC48D91D5012C4007E99D0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC48D81D5012C4007E99D0 /* DataService.swift */; };
+		B5DC48DB1D503577007E99D0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DC48DA1D503577007E99D0 /* Post.swift */; };
 		E701CFCBC8ECFF54E854CB3B /* Pods_SocialFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BF860EDD67576F1FE5D2E4 /* Pods_SocialFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		B5DC48D31D4F2569007E99D0 /* FancyCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyCircleView.swift; sourceTree = "<group>"; };
 		B5DC48D51D4FB797007E99D0 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		B5DC48D81D5012C4007E99D0 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B5DC48DA1D503577007E99D0 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		B5DC48C31D4EA8AC007E99D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B5DC48DA1D503577007E99D0 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				B5DC48CE1D4ED0BD007E99D0 /* FancyField.swift in Sources */,
 				B5DC48B21D4E9C6B007E99D0 /* SignInVC.swift in Sources */,
 				B5DC48CC1D4ECE28007E99D0 /* RoundBtn.swift in Sources */,
+				B5DC48DB1D503577007E99D0 /* Post.swift in Sources */,
 				B5DC48B01D4E9C6B007E99D0 /* AppDelegate.swift in Sources */,
 				B5DC48D41D4F2569007E99D0 /* FancyCircleView.swift in Sources */,
 				B5DC48D91D5012C4007E99D0 /* DataService.swift in Sources */,

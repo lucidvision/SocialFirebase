@@ -176,15 +176,19 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tH4-dq-YTJ">
                                         <rect key="frame" x="8" y="8" width="327" height="49"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="9kd-rL-Ekb" customClass="FancyCircleView" customModule="SocialFirebase" customModuleProvider="target">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="9kd-rL-Ekb" customClass="FancyCircleView" customModule="SocialFirebase" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="ER0-wc-fX4"/>
                                                     <constraint firstAttribute="width" constant="49" id="JbA-U9-NLs"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="tSF-Qf-kfO" appends="YES" id="Wcc-Gl-PZC"/>
+                                                </connections>
                                             </imageView>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nZc-aE-f0i" customClass="FancyField" customModule="SocialFirebase" customModuleProvider="target">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nZc-aE-f0i" customClass="FancyField" customModule="SocialFirebase" customModuleProvider="target">
                                                 <rect key="frame" x="59" y="0.0" width="209" height="49"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -197,6 +201,9 @@
                                                     <constraint firstAttribute="height" constant="49" id="iD7-nI-mB5"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="add-post"/>
+                                                <connections>
+                                                    <action selector="postBtnTapped:" destination="Xgg-UQ-790" eventType="touchUpInside" id="o0Q-lU-zI7"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -227,10 +234,10 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ieb-Yj-crB">
                                                             <rect key="frame" x="8" y="8" width="327" height="299"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UX5-TI-B5t">
+                                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UX5-TI-B5t">
                                                                     <rect key="frame" x="0.0" y="0.0" width="327" height="60"/>
                                                                     <subviews>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="HnZ-yr-Gez">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="HnZ-yr-Gez">
                                                                             <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="60" id="OKo-lm-JFh"/>
@@ -243,7 +250,7 @@
                                                                             <color key="textColor" red="0.86666666670000003" green="0.0078431372550000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="fbX-VQ-B6f">
+                                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="fbX-VQ-B6f">
                                                                             <rect key="frame" x="267" y="0.0" width="60" height="60"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="60" id="GOw-yZ-ZLR"/>
@@ -252,10 +259,10 @@
                                                                         </imageView>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="XPd-1V-UPr">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XPd-1V-UPr">
                                                                     <rect key="frame" x="0.0" y="68" width="327" height="173"/>
                                                                 </imageView>
-                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BCC-wO-3kD">
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BCC-wO-3kD">
                                                                     <rect key="frame" x="0.0" y="249" width="327" height="50"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
@@ -316,6 +323,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="caption" destination="BCC-wO-3kD" id="eyL-SI-eXV"/>
+                                            <outlet property="likeImg" destination="fbX-VQ-B6f" id="P2p-M0-ylr"/>
                                             <outlet property="likesLbl" destination="L5I-wp-uI4" id="unP-7f-14u"/>
                                             <outlet property="postImg" destination="XPd-1V-UPr" id="LPQ-1p-fXa"/>
                                             <outlet property="profileImage" destination="HnZ-yr-Gez" id="AIe-GP-mOe"/>
@@ -342,6 +350,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="addImage" destination="9kd-rL-Ekb" id="lxH-l2-vLu"/>
+                        <outlet property="captionField" destination="nZc-aE-f0i" id="1B6-Pg-dfX"/>
                         <outlet property="tableView" destination="5lY-Bb-gtF" id="J8n-Su-x2z"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="937-Ln-SXR"/>
                     </connections>
@@ -350,6 +360,11 @@
                 <tapGestureRecognizer id="s1A-Md-axJ">
                     <connections>
                         <action selector="signOutTapped:" destination="Xgg-UQ-790" id="Mhv-PW-KA8"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="tSF-Qf-kfO">
+                    <connections>
+                        <action selector="addImageTapped:" destination="Xgg-UQ-790" id="czF-aD-FwU"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -362,7 +377,6 @@
         <image name="devslopes-logo" width="150" height="94"/>
         <image name="empty-heart" width="70" height="70"/>
         <image name="f" width="352" height="328"/>
-        <image name="placeholder" width="567" height="312"/>
         <image name="profile" width="113" height="155"/>
         <image name="sign-out" width="92" height="65"/>
     </resources>
